@@ -1,0 +1,32 @@
+GET http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzA0ODQ1NzksImV4cCI6MTY3MDQ4NDYzNywiYXVkIjoidXNlcklkIiwiaXNzIjoicGlja3lvdXJwYWdlLmNvbSJ9.iDQ9GvAq0DuQ3JxoNKVElV3FMbzZJd8jfuwK6b2I_Go
+### LOGIN ROUTE
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"y.n@antino.io",
+    "password":"123456"
+}
+
+
+### REGISTER ROUTE
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"Y.n@antino.io",
+    "password":"123456"
+}
+
+### REFRESH-TOKEN ROUTE
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NzA0ODQ1NzksImV4cCI6MTcwMjA0MjE3OSwiYXVkIjoiNjM5MTdlOTYyOTYwMDI2NjM3ZGY3ZWIyIiwiaXNzIjoicGlja3lvdXJwYWdlLmNvbSJ9.cHL8XYppUaOQzx_68G311e9BQIS7doZyI1DVYTQ7lds"
+    
+}
+
+### LOGOUT ROUTE
+DELETE http://localhost:3000/auth/logout
